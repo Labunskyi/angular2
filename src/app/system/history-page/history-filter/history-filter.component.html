@@ -1,0 +1,58 @@
+<div class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+		<h4 class="modal-title">Фильтр</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="closeFilter()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="control-label" for="period">Выберите период</label>
+          <select class="form-control" id="period" [(ngModel)]="selectedPeriod">
+            <option *ngFor="let p of timePeriods" [value]="p.type">{{p.label}}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Выберите тип события</label>
+		  <div class="form-group row">
+    
+    
+  </div>
+          <div class="form-check">
+            <div *ngFor="let t of types">
+              <input class="form-check-input"
+                id="gridCheck"
+                type="checkbox"
+                [value]="t.type"
+                (change)="handleChangeType($event.target)"
+              >
+              <label class="form-check-label" for="gridCheck">{{t.label}}</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Выберите категории</label>
+          <div class="form-check">
+            <div *ngFor="let c of categories">
+              <input
+                class="form-check-input"
+                type="checkbox"
+				id="gridCheck1"
+                [value]="c.id"
+                (change)="handleChangeCategory($event.target)"
+              >
+              <label class="form-check-label" for="gridCheck1">{{c.name}}</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="closeFilter()">Отмена</button>
+          <button type="button" class="btn btn-primary" (click)="applyFilter()" >Применить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

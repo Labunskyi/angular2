@@ -1,0 +1,102 @@
+{
+  "cars": [
+    {
+      "name": "Audi",
+      "color": "red",
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "wfm@mail.ru",
+      "password": "1234",
+      "name": "Администратор"
+    },
+    {
+      "email": "er@er.ru",
+      "password": "1234",
+      "name": "vova",
+      "id": 2
+    }
+  ],
+  "bill": {
+    "value": 6700,
+    "currency": "EUR"
+  },
+  "categories": [
+    {
+      "name": "Дом",
+      "capacity": 1500,
+      "id": 1
+    },
+    {
+      "name": "Еда",
+      "capacity": 1000,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Машина",
+      "capacity": 3000
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "type": "income",
+      "amount": 1250,
+      "category": 2,
+      "date": "12.06.2017 19:49:02",
+      "description": "Подарили еду в гостях"
+    },
+    {
+      "type": "outcome",
+      "amount": 1000,
+      "category": 1,
+      "date": "30.12.2018 23:29:54",
+      "description": "new1",
+      "id": 3
+    },
+    {
+      "type": "outcome",
+      "amount": 150,
+      "category": 2,
+      "date": "01.01.2019 19:37:14",
+      "description": "bread",
+      "id": 5
+    },
+    {
+      "type": "outcome",
+      "amount": 400,
+      "category": 2,
+      "date": "01.01.2019 19:37:42",
+      "description": "bread",
+      "id": 6
+    },
+    {
+      "type": "outcome",
+      "amount": 3000,
+      "category": 3,
+      "date": "02.01.2019 14:50:52",
+      "description": "fuel",
+      "id": 7
+    },
+    {
+      "type": "outcome",
+      "amount": 200,
+      "category": 1,
+      "date": "02.01.2019 15:04:59",
+      "description": "bread",
+      "id": 8
+    },
+    {
+      "type": "outcome",
+      "amount": 100,
+      "category": 1,
+      "date": "04.01.2019 11:11:15",
+      "description": "bread",
+      "id": 9
+    }
+  ]
+}
